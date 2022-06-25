@@ -1,0 +1,24 @@
+Algoritmo "semnome"
+//Olá, Estudante!
+//Você começa agora o seu mais novo projeto, a ser realizado individualmente!
+//Uma agência de viagens precisa de você para desenvolver uma série de módulos
+//para organizar as informações dos seus clientes, apresentar seus serviços e
+//melhorar os serviços oferecidos aos seus parceiros.
+//Vamos começar?
+//Nesta atividade, vamos usar os conceitos de algoritmos em pseudocódigo
+//(Resolução de problemas usando portugol), HTML, CSS e BOOTSTRAP para a
+//construção de um modelo de agência de viagens.
+//Usando Pseudocódigo:
+//Usando conceitos de programação estruturada (Vetor), criar em pseudocódigo
+//um menu para simular um cadastro para uma agência de viagens com as
+//seguintes funções: cadastro de cliente e cadastro de destino, criar também
+//uma consulta para cada estrutura de dados.
+Var
+// Seção de Declarações das variáveis 
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+Fimalgoritmo
