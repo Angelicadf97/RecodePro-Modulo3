@@ -24,12 +24,14 @@ inicio
          limpatela
          dadosclientegeral
       caso 0
-fimalgoritmo
-outrocaso
-   escreval("Opção inválida! Tente novamente!")
-   escreval("")
-fimescolha
-ate (op>0) e (op<3)
+         escreval("")
+         escreval("PROGRAMA FINALIZADO!")
+         fimalgoritmo
+      outrocaso
+         escreval("Opção inválida! Tente novamente!")
+         escreval("")
+      fimescolha
+   ate (op>0) e (op<3)
 fimprocedimento
 //----------fim menu----------
 
@@ -45,7 +47,7 @@ inicio
    escreval("Digite o CPF(xxx.xxx.xxx-xx)do cliente:")
    leia(cpf)
    escreval("")
-   para n de 0 ate 10 faca
+   para n de 0 ate 50 faca
       se (cpf=dadoscliente[2,n]) entao
          escreval("Cliente cadastrado!")
          cpfa<-dadoscliente[2,n]
@@ -142,7 +144,7 @@ var
    j:inteiro
    k:inteiro
 inicio
-   para i de 0 ate 10 faca
+   para i de 0 ate 50 faca
       se (cpfa=dadoscliente[2,i]) entao
          n<-i
       senao
@@ -279,8 +281,7 @@ var
    k:inteiro
 inicio
    se (dadoscliente[0,0]<>"") entao
-      para i de 0 ate 10 faca
-         n<-i
+      enquanto (dadoscliente[0,n]<>"") faca
          escreval("DADOS CLIENTE:")
          escreval("Nome:",dadoscliente[0,n])
          escreval("Data de nascimento:",dadoscliente[1,n])
@@ -292,7 +293,7 @@ inicio
          escreval("")
          escreval("VIAGENS CADASTRADAS:")
          para j de 0 ate 50 faca
-            se (cpfa=dadosviagem[0,j]) entao
+            se (dadoscliente[2,n]=dadosviagem[0,j]) entao
                v<-j
                escreval("Destino:",dadosviagem[2,v],"-",dadosviagem[3,v])
                escreval("Partida:",dadosviagem[4,v],"-",dadosviagem[5,v])
@@ -306,12 +307,20 @@ inicio
             fimse
             j<-v+1
          fimpara
-      fimpara
+         escreval("..............")
+         escreval("")
+         n<-n+1
+      fimenquanto
    senao
       escreval("Não há cliente cadastrado!")
       escreval("")
       menu
    fimse
+   escreval("")
+   escreval("Digite qualquer tecla para retornar ao menu principal!")
+   leia(op)
+   limpatela
+   menu
 
 fimprocedimento
 //----------fim dados cliente geral----------
@@ -329,5 +338,4 @@ Inicio
    escreval("Olá! Bem vindo ao CADASTROS da Viagem.com!")
    escreval("")
    menu
-   escreval("Volte sempre!")
 Fimalgoritmo
