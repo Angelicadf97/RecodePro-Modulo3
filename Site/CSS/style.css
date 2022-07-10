@@ -1,37 +1,70 @@
 .main {
+    background-color: #eeeeee;
     min-height: 100vh;
-    width: 100vw;
 }
 
 header {
-    width: 100%;
-    height: 70px;
-    background-color: #DAE9EB;
+    display: flex;
+    background-color: #034C8C;
 }
 
 .conteudo {
-    width: 100%;
-    min-height: calc(100vh - 250px);
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+.form-box{
+    min-height: calc(100vh - 72px);
 }
 
 footer {
-    width: 100%;
-    height: 180px;
     padding: 20px;
-    background-color: #DAE9EB;
-    color: #3B3936;
+    background-color: #034C8C;
+    color: #ffffff;
 }
 
 .txcolor{
-    color: #3B3936;
+    color: #F2B705;
 }
 
 .bgred{
-    background-color: #BD2A2E;
+    background-color: #cacaca;
+}
+.bgver1{
+    background-color: #034C8C;
 }
 
-/* #BD2A2E;
-#3B3936;
-#DAE9EB;
-#889C9B;
-#486966; */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #F2B705;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eeeeee;
+}
+.login {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+}
+.contato {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 1300px;
+}
+.promo{
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: flex-start;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

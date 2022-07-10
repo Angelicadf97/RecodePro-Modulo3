@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar sua conta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!--BARRA DE NAVEGAÇÃO-->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-md navbar-light col-10">
+                        <a class="navbar-brand" href="index.html"><img src="../IMG/V iagens.png" alt=""></a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="index.html">Pacotes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="voos.html">Voos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="hospedagem.html">Hospedagens</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="ofertas.html">Ofertas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="col-1 mt-3">
+                        <div class="dropdown">
+                            <button class="btn dropdown" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="..//IMG/Ativo 1.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="login.html">Acessar conta</a></li>
+                                <li><a class="dropdown-item" href="cadastro.html">Criar conta</a></li>
+                                <li><a class="dropdown-item" href="contato.html">Entre em contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!--BARRA DE NAVEGAÇÃO-->
+
+        <!--CONTEUDO-->
+        <div class="d-flex justify-content-center align-items-center form-box">
+            <!--FORMULÁRIO-->
+            <div class="login my-5">
+                <h2>CRIAR CONTA</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCity" class="form-label">Gênero</label>
+                        <div class="d-flex">
+                            <div class="form-check col">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Feminino
+                                </label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                    checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                    checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Outro
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDate" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control" id="inputDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="inputCPF">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCpf" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="inputCPF">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCpf" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="inputCPF">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCpf" class="form-label">Senha</label>
+                        <input type="text" class="form-control" id="inputCPF">
+                    </div>
+                    <div class="col-lg-4 mb-2 d-grid">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+            <!--FORMULÁRIO-->
+        </div>
+        <!--CONTEUDO-->
+    </div>
+    <!--SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
