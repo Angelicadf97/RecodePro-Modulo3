@@ -32,7 +32,7 @@ public class PacoteCRUD {
 		switch (menu) {
 		case 1:
 			System.out.println("Digite o CPF do cliente: (xxx.xxx.xxx-xx)");
-			Cliente cliente = clienteDAO.clienteByCPF(entrada.next());
+			Cliente cliente = clienteDAO.clienteByCPF(entrada.nextLine());
 			pacote.setCliente(cliente);
 
 			pacoteDAO.save(pacote);
@@ -49,7 +49,7 @@ public class PacoteCRUD {
 			entrada.nextLine();
 
 			System.out.println("Digite o CPF do cliente:");
-			Cliente cliente1 = clienteDAO.clienteByCPF(entrada.next());
+			Cliente cliente1 = clienteDAO.clienteByCPF(entrada.nextLine());
 			pacote.setCliente(cliente1);
 
 			pacoteDAO.update(pacote);

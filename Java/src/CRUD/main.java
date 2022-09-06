@@ -21,7 +21,6 @@ public class main {
 		System.out.println("0 - Sair");
 
 		menu = entrada.nextInt();
-		entrada.nextLine();
 		switch (menu) {
 		case 1:
 			ClienteCRUD.Cliente(args);

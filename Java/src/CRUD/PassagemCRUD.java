@@ -50,11 +50,11 @@ public class PassagemCRUD {
 			entrada.nextLine();
 
 			System.out.println("Digite o CNPJ do aeroporto:");
-			Aeroporto aeroporto = aeroportoDAO.aeroById(entrada.next());
+			Aeroporto aeroporto = aeroportoDAO.aeroById(entrada.nextLine());
 			passagem.setAeroporto(aeroporto);
 
 			System.out.println("Digite o CNPJ da concessionaria: ");
-			Concessionaria concessionaria = concessionariaDAO.concByCNPJ(entrada.next());
+			Concessionaria concessionaria = concessionariaDAO.concByCNPJ(entrada.nextLine());
 			passagem.setConcessionaria(concessionaria);
 
 			System.out.println("Digite o CPF do passageiro: ");
@@ -90,7 +90,7 @@ public class PassagemCRUD {
 			entrada.nextLine();
 
 			System.out.println("Digite o CNPJ do aeroporto:");
-			Aeroporto aeroporto1 = aeroportoDAO.aeroById(entrada.next());
+			Aeroporto aeroporto1 = aeroportoDAO.aeroById(entrada.nextLine());
 			passagem.setAeroporto(aeroporto1);
 
 			System.out.println("Digite o CNPJ da concessionaria: ");

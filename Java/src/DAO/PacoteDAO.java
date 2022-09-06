@@ -87,7 +87,7 @@ public class PacoteDAO {
 
 	public void update(Pacote pacote) {
 
-		String sql = "UPDATE pacote SET id_cli = ?, total = ?" + "WHERE id_pac=?";
+		String sql = "UPDATE pacote SET cpf_cli = ?, total = ?" + "WHERE id_pac=?";
 
 		try {
 			

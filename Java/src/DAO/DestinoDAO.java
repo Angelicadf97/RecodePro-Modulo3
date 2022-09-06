@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Conexao.Conexao;
-import objetos.Concessionaria;
 import objetos.Destino;
-import objetos.Hospedagem;
 
 public class DestinoDAO {
 

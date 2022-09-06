@@ -20,13 +20,14 @@ public  class ClienteCRUD {
 		System.out.println("2 - Remover cliente");
 		System.out.println("3 - Atualizar cliente");
 		System.out.println("4 - Mostrar clientes");
-		System.out.println("5 - Buscar cliente por ID");
+		System.out.println("5 - Buscar cliente por CPF");
 		System.out.println("0 - Voltar");
 		menu = entrada.nextInt();
+		entrada.nextLine();
 		switch (menu) {
 		case 1:
 			System.out.println("Digite o CPF:(xxx.xxx.xxx-xx)");
-			cliente.setCpf(entrada.next());
+			cliente.setCpf(entrada.nextLine());
 			
 			System.out.println("Digite o nome:");
 			cliente.setNome(entrada.nextLine());
@@ -63,7 +64,7 @@ public  class ClienteCRUD {
 			break;
 		case 3:
 			System.out.println("Digite o CPF:(xxx.xxx.xxx-xx)");
-			cliente.setCpf(entrada.next());
+			cliente.setCpf(entrada.nextLine());
 			
 			System.out.println("Digite o nome:");
 			cliente.setNome(entrada.nextLine());

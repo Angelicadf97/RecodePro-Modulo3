@@ -118,11 +118,11 @@ public class ClienteDAO {
 
 			pstm.setString(6, cliente.getUf());
 
-			pstm.setString(7, cliente.getUf());
+			pstm.setString(7, cliente.getEmail());
 
 			pstm.setString(8, cliente.getEmail());
 
-			pstm.setString(9, cliente.getSenha());
+			pstm.setString(9, cliente.getCpf());
 
 			pstm.execute();
 

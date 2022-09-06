@@ -27,7 +27,7 @@ public class ConcessionariaCRUD {
 		switch (menu) {
 		case 1:
 			System.out.println("Digite o CNPJ da concessionaria: (xx.xxx.xxx/xxxx-xx)");
-			concessionaria.setCnpj(entrada.next());
+			concessionaria.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			concessionaria.setNome(entrada.nextLine());
@@ -42,7 +42,7 @@ public class ConcessionariaCRUD {
 			break;
 		case 3:
 			System.out.println("Digite o CNPJ da concessionaria: (xx.xxx.xxx/xxxx-xx)");
-			concessionaria.setCnpj(entrada.next());
+			concessionaria.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			concessionaria.setNome(entrada.nextLine());

@@ -32,7 +32,7 @@ public class DestinoCRUD {
 			destino.setCidade(entrada.nextLine());
 
 			System.out.println("Digite o UF:");
-			destino.setUf(entrada.next());
+			destino.setUf(entrada.nextLine());
 
 			destinoDAO.save(destino);
 			DestinoCRUD.Destino(args);
@@ -52,7 +52,7 @@ public class DestinoCRUD {
 			destino.setCidade(entrada.nextLine());
 
 			System.out.println("Digite o UF:");
-			destino.setUf(entrada.next());
+			destino.setUf(entrada.nextLine());
 
 			destinoDAO.update(destino);
 			DestinoCRUD.Destino(args);

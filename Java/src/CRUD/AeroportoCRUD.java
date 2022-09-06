@@ -28,7 +28,7 @@ public class AeroportoCRUD {
 		switch (menu) {
 		case 1:
 			System.out.println("Digite o CNPJ do aeroporto: (xx.xxx.xxx/xxxx-xx)");
-			aeroporto.setCnpj(entrada.next());
+			aeroporto.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			aeroporto.setNome(entrada.nextLine());
@@ -37,7 +37,7 @@ public class AeroportoCRUD {
 			aeroporto.setCidade(entrada.nextLine());
 
 			System.out.println("Digite o UF:");
-			aeroporto.setUf(entrada.next());
+			aeroporto.setUf(entrada.nextLine());
 
 			aeroportoDAO.save(aeroporto);
 			AeroportoCRUD.Aeroporto(args);
@@ -49,7 +49,7 @@ public class AeroportoCRUD {
 			break;
 		case 3:
 			System.out.println("Digite o CNPJ do aeroporto: (xx.xxx.xxx/xxxx-xx)");
-			aeroporto.setCnpj(entrada.next());
+			aeroporto.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			aeroporto.setNome(entrada.nextLine());
@@ -58,7 +58,7 @@ public class AeroportoCRUD {
 			aeroporto.setCidade(entrada.nextLine());
 
 			System.out.println("Digite o UF:");
-			aeroporto.setUf(entrada.next());
+			aeroporto.setUf(entrada.nextLine());
 
 			aeroportoDAO.update(aeroporto);
 			AeroportoCRUD.Aeroporto(args);

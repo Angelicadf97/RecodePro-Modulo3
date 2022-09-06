@@ -28,7 +28,7 @@ public class HospedagemCRUD {
 		switch (menu) {
 		case 1:
 			System.out.println("Digite o CNPJ da hospedagem: (xx.xxx.xxx/xxxx-xx)");
-			hospedagem.setCnpj(entrada.next());
+			hospedagem.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			hospedagem.setNome(entrada.nextLine());
@@ -38,6 +38,7 @@ public class HospedagemCRUD {
 
 			System.out.println("Digite o valor da diária: ");
 			hospedagem.setPreco(entrada.nextDouble());
+			entrada.nextLine();
 
 			System.out.println("Digite a cidade: ");
 			hospedagem.setCidade(entrada.nextLine());
@@ -55,7 +56,7 @@ public class HospedagemCRUD {
 			break;
 		case 3:
 			System.out.println("Digite o CNPJ da hospedagem: (xx.xxx.xxx/xxxx-xx)");
-			hospedagem.setCnpj(entrada.next());
+			hospedagem.setCnpj(entrada.nextLine());
 
 			System.out.println("Digite o nome:");
 			hospedagem.setNome(entrada.nextLine());
@@ -65,11 +66,13 @@ public class HospedagemCRUD {
 
 			System.out.println("Digite o valor da diária: ");
 			hospedagem.setPreco(entrada.nextDouble());
+			entrada.nextLine();
 
 			System.out.println("Digite a cidade: ");
 			hospedagem.setCidade(entrada.nextLine());
 
 			System.out.println("Digite o UF:");
+			hospedagem.setUf(entrada.nextLine());
 
 			hospedagemDAO.update(hospedagem);
 			HospedagemCRUD.Hospedagem(args);
